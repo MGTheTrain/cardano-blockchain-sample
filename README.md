@@ -25,7 +25,7 @@ Refer to [`Quickstart` section here](https://github.com/cardano-foundation/carda
 
 ```sh
 # On Unix systems or on Windows OS 10 with Git Bash or WSL
-NETWORK=preview docker-compose up -d --build # Preview Testnet
+NETWORK=preview docker-compose up -d --build # Preview Testnet (preferred for development)
 NETWORK=preprod docker-compose up -d --build # Pre-Production Testnet
 NETWORK=mainnet docker-compose up -d --build # Production (Mainnet)
 # This will start up the Cardano node and wallet applications and connect to the specified network (mainnet, preview, preprod)
@@ -47,6 +47,10 @@ docker exec -it <cardano-wallet or cardano-node container id> sh
 curl http://localhost:8090/v2/network/information
 # with cli in cardano-wallet container
 docker run --network host --rm cardanofoundation/cardano-wallet network information
+
+# Wallet operations
+docker run --network host --rm cardanofoundation/cardano-wallet wallet list
+docker run --network host --rm cardanofoundation/cardano-wallet wallet delete <wallet id>
 ```
 
 ### Run Python sample app interfacing with the Cardano wallet
