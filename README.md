@@ -69,7 +69,7 @@ Execute sample app in a docker container:
 ```sh
 cd app
 docker build -t python-cardano-sample-app:stable . # Build docker image
-docker run --network host --rm python-cardano-sample-app:stable /bin/sh -c "python main.py" # Run a container
+docker run --network host --rm python-cardano-sample-app:stable sh "python main.py" # Run a container
 ```
 
 ### Clear docker resources
