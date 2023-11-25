@@ -8,7 +8,7 @@
 
 ## Summary
 
-Sample repository demonstrating how to operate on Cardano nodes and Cardano wallets.
+Sample repository implemented in regards to the Cardano blockchain.
 
 ## References
 
