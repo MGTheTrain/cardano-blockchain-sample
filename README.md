@@ -53,8 +53,8 @@ docker run --network host --rm cardanofoundation/cardano-wallet network informat
 
 ```sh
 cd app
-docker build -t cardano-wallet-sample-app . # Build docker image
-docker run --network host --rm cardano-wallet-sample-app /bin/sh -c "python main.py"
+docker build -t python-cardano-sample-app:stable . # Build docker image
+docker run --network host --rm cardano-wallet-sample-app /bin/sh -c "python main.py" # Run a container
 ```
 
 ### Clear docker resources
