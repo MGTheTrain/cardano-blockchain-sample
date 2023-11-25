@@ -8,7 +8,7 @@
 
 ## Summary
 
-Sample repository demonstrating how to utilize the Cardano blockchain in order to write smart contracts
+Sample repository demonstrating how to operate on Cardano nodes and Cardano wallets.
 
 ## References
 
