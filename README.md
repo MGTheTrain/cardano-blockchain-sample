@@ -55,6 +55,16 @@ docker run --network host --rm cardanofoundation/cardano-wallet wallet delete <w
 
 ### Run Python sample app interfacing with the Cardano wallet
 
+Execute sample app:
+
+```sh
+cd app
+pip install -r requirements.txt
+python main.py
+```
+
+Trough a docker container:
+
 ```sh
 cd app
 docker build -t python-cardano-sample-app:stable . # Build docker image
