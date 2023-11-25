@@ -72,7 +72,7 @@ docker build -t python-cardano-sample-app:stable . # Build docker image
 docker run --network host --rm python-cardano-sample-app:stable sh "python main.py" # Run a container
 ```
 
-### Run Python sample app implementain a smart contract
+### Compile Python smart contract
 
 Compile contract:
 
@@ -87,7 +87,7 @@ Compile contract in a docker container:
 ```sh
 cd cardano-smart-contract
 docker build -t python-cardano-sample-smart-contract:stable . # Build docker image
-docker run --rm -v $(pwd):/app/contract/ python-cardano-sample-smart-contract:stable # Run a container
+docker run --rm -v $(pwd)/contract/:/app/contract/ python-cardano-sample-smart-contract:stable # Run a container
 ```
 
 ### Clear docker resources
