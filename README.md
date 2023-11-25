@@ -12,11 +12,17 @@ Sample repository demonstrating how to operate on Cardano nodes and Cardano wall
 
 ## References
 
+### Cardano objects basics (e.g. cardano-node and cardano-wallet)
+
 - [Python cardano-tools pip package](https://pypi.org/project/cardano-tools/)
 - [Cardano Python Module quickstart](https://cardano-python.readthedocs.io/en/latest/quickstart.html)
 - [cardano-wallet](https://github.com/cardano-foundation/cardano-wallet/tree/master)
 - [Getting started with Cardano testnets](https://docs.cardano.org/cardano-testnet/getting-started/#:~:text=To%20get%20started%20and%20join,ada%20to%20test%20your%20transactions.)
 - [The official Cardano Environment configuration files](https://book.world.dev.cardano.org/environments.html#vasil-dev)
+
+### Deploying smart contracts to Cardano blockchain
+
+- [opshin section Deploying](https://github.com/OpShin/opshin)
 - [Plutus Pioneer Program - Part 2: How to “deploy” a Smart Contract in Cardano](https://www.essentialcardano.io/article/plutus-pioneer-program-part-2-how-to-deploy-a-smart-contract-in-cardano)
 
 ## How to use
