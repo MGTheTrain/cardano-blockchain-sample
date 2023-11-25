@@ -12,7 +12,7 @@ Sample repository demonstrating how to operate on Cardano nodes and Cardano wall
 
 ## References
 
-### Cardano objects basics (e.g. cardano-node and cardano-wallet)
+### Cardano basics (e.g. cardano-node and cardano-wallet)
 
 - [Python cardano-tools pip package](https://pypi.org/project/cardano-tools/)
 - [Cardano Python Module quickstart](https://cardano-python.readthedocs.io/en/latest/quickstart.html)
@@ -22,7 +22,7 @@ Sample repository demonstrating how to operate on Cardano nodes and Cardano wall
 
 ### Deploying smart contracts to Cardano blockchain
 
-- [opshin section Deploying](https://github.com/OpShin/opshin)
+- [Smart Contracts](https://developers.cardano.org/docs/smart-contracts/)
 - [Plutus Pioneer Program - Part 2: How to “deploy” a Smart Contract in Cardano](https://www.essentialcardano.io/article/plutus-pioneer-program-part-2-how-to-deploy-a-smart-contract-in-cardano)
 
 ## How to use
