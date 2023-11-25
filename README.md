@@ -31,6 +31,15 @@ NETWORK=mainnet docker-compose up -d --build # Production (Mainnet)
 # This will start up the Cardano node and wallet applications and connect to the specified network (mainnet, preview, preprod)
 ```
 
+### Execute commands within a running container interactively
+
+```sh
+# On Windows OS with Git Bash
+winpty.exe docker exec -it <cardano-wallet or cardano-node container id> sh
+# On Unix systems
+docker exec -it <cardano-wallet or cardano-node container id> sh
+```
+
 ### Test connection to the cardano-wallet:
 
 ```sh
