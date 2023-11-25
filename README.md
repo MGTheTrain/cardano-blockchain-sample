@@ -25,14 +25,21 @@ Refer to [`Quickstart` section here](https://github.com/cardano-foundation/carda
 
 ```sh
 # On Unix systems or on Windows OS 10 with Git Bash or WSL
-NETWORK=mainnet docker-compose up
+NETWORK=mainnet docker-compose up -d --build
 ```
 
-Test connection to the cardano-wallet:
+### Test connection to the cardano-wallet:
 
 ```sh
 # with curl
 curl http://localhost:8090/v2/network/information
 # with cli in cardano-wallet container
 docker run --network host --rm cardanofoundation/cardano-wallet network information
+```
+
+### Clear docker resources
+
+```sh
+docker rm -f $(docker ps -qa)
+docker system prune --volumes --force
 ```
