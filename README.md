@@ -1,4 +1,4 @@
-# python-cardano-blockchain-sample
+# cardano-blockchain-sample
 
 ## Table of Contents
 
@@ -72,9 +72,23 @@ docker build -t python-cardano-sample-app:stable . # Build docker image
 docker run --network host --rm python-cardano-sample-app:stable sh "python main.py" # Run a container
 ```
 
-### Run Python sample app interfacing with the Smart Contracts
+### Run Python sample app implementain a smart contract
 
-TBD
+Compile contract:
+
+```sh
+cd cardano-smart-contract
+pip install -r requirements.txt
+opshin build contract.py
+```
+
+Compile contract in a docker container:
+
+```sh
+cd cardano-smart-contract
+docker build -t python-cardano-sample-smart-contract:stable . # Build docker image
+docker run --rm -v $(pwd):/app/contract/ python-cardano-sample-smart-contract:stable # Run a container
+```
 
 ### Clear docker resources
 
