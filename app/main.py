@@ -46,14 +46,14 @@ def main() -> None:
         passphrase="passphrase1234",
     )
     wal = get_wallet_by_id(wallet_id)
+    
+    print(f"wallet addresses: {wal.addresses()}")
+    print(f"wallet transactions: {wal.transactions()}")
+
+    # Continue from here: https://cardano-python.readthedocs.io/en/latest/transactions.html
+
     delete_wallet_by_id(wal)
 
-    # # Check wallet sync progress
-    # wal.sync_progress()
-
-    # # Get wallet balance
-    # balance = wal.balance()
-    # print(f"Wallet balance: {balance} ADA")
 
 if __name__ == "__main__":
     main()
