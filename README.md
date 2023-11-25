@@ -94,14 +94,11 @@ Smart contracts need to be deployed to the Cardano blockchain. See [Plutus Pione
 
 Copilot: *Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. They are stored on a blockchain network and automatically execute when certain conditions are met.*
 
-Copilot: 
-```sh
-- Finance: Smart contracts can be used for trading, investing, lending, and borrowing 2.
-- Healthcare: Smart contracts can be used to store and share medical records securely and efficiently 1.
-- Gaming: Smart contracts can be used to create decentralized gaming platforms that allow players to earn cryptocurrency rewards 
-- Real Estate: Smart contracts can be used to automate the process of buying and selling real estate, reducing the need for intermediaries
-- Legal Industry: Smart contracts can be used to automate legal agreements, such as wills and trusts
-```
+- *Finance: Smart contracts can be used for trading, investing, lending, and borrowing*
+- *Healthcare: Smart contracts can be used to store and share medical records securely and efficiently*
+- *Gaming: Smart contracts can be used to create decentralized gaming platforms that allow players to earn cryptocurrency rewards* 
+- *Real Estate: Smart contracts can be used to automate the process of buying and selling real estate, reducing the need for intermediaries*
+- *Legal Industry: Smart contracts can be used to automate legal agreements, such as wills and trusts*
 
 ### Clear docker resources
 
