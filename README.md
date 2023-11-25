@@ -21,11 +21,14 @@ Sample repository demonstrating how to utilize the Cardano blockchain in order t
 
 ### Ramp up the docker-compose cluster containing the cardano-node container and cardano-wallet container
 
-Refer to [`Quickstart` section here](https://github.com/cardano-foundation/cardano-wallet/tree/master). Ramp up the docker-compose:
+Refer to [`Quickstart` section here](https://github.com/cardano-foundation/cardano-wallet/tree/master). Ramp up the docker-compose and select one of the  Cardano Environment:
 
 ```sh
 # On Unix systems or on Windows OS 10 with Git Bash or WSL
-NETWORK=mainnet docker-compose up -d --build
+NETWORK=preview docker-compose up -d --build # Preview Testnet
+NETWORK=preprod docker-compose up -d --build # Pre-Production Testnet
+NETWORK=mainnet docker-compose up -d --build # Production (Mainnet)
+# This will start up the Cardano node and wallet applications and connect to the specified network (mainnet, preview, preprod)
 ```
 
 ### Test connection to the cardano-wallet:
