@@ -92,8 +92,7 @@ docker run --rm -v $(pwd)/contract/:/app/contract/ python-cardano-sample-smart-c
 
 Smart contracts need to be deployed to the Cardano blockchain. See [Plutus Pioneer Program - Part 2: How to “deploy” a Smart Contract in Cardano](https://www.essentialcardano.io/article/plutus-pioneer-program-part-2-how-to-deploy-a-smart-contract-in-cardano).
 
-Copilot: *Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. They are stored on a blockchain network and automatically execute when certain conditions are met.*
-
+Copilot: *Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. They are stored on a blockchain network and automatically execute when certain conditions are met. Here are some examples of smart contract use cases:*
 - *Finance: Smart contracts can be used for trading, investing, lending, and borrowing*
 - *Healthcare: Smart contracts can be used to store and share medical records securely and efficiently*
 - *Gaming: Smart contracts can be used to create decentralized gaming platforms that allow players to earn cryptocurrency rewards* 
