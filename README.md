@@ -49,9 +49,13 @@ curl http://localhost:8090/v2/network/information
 docker run --network host --rm cardanofoundation/cardano-wallet network information
 ```
 
-### Run Python sample
+### Run Python sample app interfacing with the Cardano wallet
 
-TBD
+```sh
+cd app
+docker build -t cardano-wallet-sample-app # Build docker image
+docker run --network host --rm cardano-wallet-sample-app /bin/sh -c "python main.py"
+```
 
 ### Clear docker resources
 
