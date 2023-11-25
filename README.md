@@ -59,7 +59,7 @@ docker run --network host --rm cardanofoundation/cardano-wallet wallet delete <w
 Execute sample app:
 
 ```sh
-cd app
+cd cardano-wallet-app
 pip install -r requirements.txt
 python main.py
 ```
@@ -67,10 +67,14 @@ python main.py
 Execute sample app in a docker container:
 
 ```sh
-cd app
+cd cardano-wallet-app
 docker build -t python-cardano-sample-app:stable . # Build docker image
 docker run --network host --rm python-cardano-sample-app:stable sh "python main.py" # Run a container
 ```
+
+### Run Python sample app interfacing with the Smart Contracts
+
+TBD
 
 ### Clear docker resources
 
