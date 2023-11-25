@@ -24,6 +24,7 @@ Sample repository demonstrating how to operate on Cardano nodes and Cardano wall
 
 - [Smart Contracts](https://developers.cardano.org/docs/smart-contracts/)
 - [Plutus Pioneer Program - Part 2: How to “deploy” a Smart Contract in Cardano](https://www.essentialcardano.io/article/plutus-pioneer-program-part-2-how-to-deploy-a-smart-contract-in-cardano)
+- [how to deploy smart contract on cardano](https://www.youtube.com/results?search_query=how+to+deploy+smart+contract+on+cardano)
 
 ## How to use
 
