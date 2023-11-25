@@ -63,7 +63,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Trough a docker container:
+Execute sample app in a docker container:
 
 ```sh
 cd app
