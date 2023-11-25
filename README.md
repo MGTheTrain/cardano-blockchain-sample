@@ -28,8 +28,11 @@ Refer to [`Quickstart` section here](https://github.com/cardano-foundation/carda
 NETWORK=mainnet docker-compose up
 ```
 
-Test connection:
+Test connection to the cardano-wallet:
 
 ```sh
+# with curl
 curl http://localhost:8090/v2/network/information
+# with cli in cardano-wallet container
+docker run --network host --rm cardanofoundation/cardano-wallet network information
 ```
