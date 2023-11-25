@@ -40,7 +40,7 @@ winpty.exe docker exec -it <cardano-wallet or cardano-node container id> sh
 docker exec -it <cardano-wallet or cardano-node container id> sh
 ```
 
-### Test connection to the cardano-wallet:
+### Test connection to the cardano-wallet
 
 ```sh
 # with curl
