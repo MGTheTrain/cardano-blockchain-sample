@@ -77,7 +77,7 @@ Execute sample app in a docker container:
 ```sh
 cd cardano-wallet-app
 docker build -t python-cardano-sample-app:stable . # Build docker image
-docker run --network host --rm python-cardano-sample-app:stable sh "python main.py" # Run a container
+docker run --network host --rm python-cardano-sample-app:stable sh "python main.py" # Start a container
 ```
 
 ### Compile Python smart contract
@@ -87,7 +87,8 @@ Compile contract:
 ```sh
 cd cardano-smart-contract
 pip install -r requirements.txt
-opshin build contract.py
+opshin build simple-withdraw-contract.py # It checks the presence of a specific signature in the transaction to approve spending funds
+opshin build simple-healthcare-contract.py # This smart contract defines a HealthDatum data class that inherits from PlutusData. The HealthDatum class has five attributes: patient_id, doctor_id, diagnosis, treatment, and cost. The validator function checks if the cost attribute of the datum object is greater than zero and if the length of the patient_id and doctor_id attributes is 32 bytes. If any of these conditions are not met, the function raises an AssertionError with an appropriate message.
 ```
 
 Compile contract in a docker container:
@@ -95,7 +96,8 @@ Compile contract in a docker container:
 ```sh
 cd cardano-smart-contract
 docker build -t python-cardano-sample-smart-contract:stable . # Build docker image
-docker run --rm -v $(pwd)/contract/:/app/contract/ python-cardano-sample-smart-contract:stable # Run a container
+docker run --rm -v $(pwd)/contract/:/app/contract/ python-cardano-sample-smart-contract:stable sh "opshin build simple-withdraw-contract.py" # Start a container, It checks the presence of a specific signature in the transaction to approve spending funds
+docker run --rm -v $(pwd)/contract/:/app/contract/ python-cardano-sample-smart-contract:stable sh "opshin build simple-healthcare-contract.py" # Start a container, It checks the presence of a specific signature in the transaction to approve spending funds
 ```
 
 Smart contracts need to be deployed to the Cardano blockchain. See [Plutus Pioneer Program - Part 2: How to “deploy” a Smart Contract in Cardano](https://www.essentialcardano.io/article/plutus-pioneer-program-part-2-how-to-deploy-a-smart-contract-in-cardano).

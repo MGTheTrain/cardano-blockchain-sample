@@ -10,4 +10,3 @@ COPY requirements.txt .
 RUN /bin/sh -c "pip install -r requirements.txt"
 
 COPY . .
-ENTRYPOINT ["opshin" , "build", "contract.py"]

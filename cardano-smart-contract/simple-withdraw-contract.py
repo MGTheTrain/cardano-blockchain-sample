@@ -1,3 +1,4 @@
+# Source: https://developers.cardano.org/docs/smart-contracts/opshin/
 from opshin.prelude import *
 
 @dataclass()
