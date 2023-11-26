@@ -96,8 +96,8 @@ Compile contract in a docker container:
 ```sh
 cd cardano-smart-contract
 docker build -t python-cardano-sample-smart-contract:stable . # Build docker image
-docker run --rm -v $(pwd)/contract/:/app/contract/ python-cardano-sample-smart-contract:stable sh "opshin build simple-withdraw-contract.py" # Start a container, It checks the presence of a specific signature in the transaction to approve spending funds
-docker run --rm -v $(pwd)/contract/:/app/contract/ python-cardano-sample-smart-contract:stable sh "opshin build simple-healthcare-contract.py" # Start a container, It checks the presence of a specific signature in the transaction to approve spending funds
+docker run --rm -v $(pwd)/contract/:/app/build/simple-withdraw-contract/ python-cardano-sample-smart-contract:stable sh "opshin build simple-withdraw-contract.py" # Start a container, It checks the presence of a specific signature in the transaction to approve spending funds
+docker run --rm -v $(pwd)/contract/:/app/build/simple-healthcare-contract/ python-cardano-sample-smart-contract:stable sh "opshin build simple-healthcare-contract.py" # Start a container, It checks the presence of a specific signature in the transaction to approve spending funds
 ```
 
 Smart contracts need to be deployed to the Cardano blockchain. See [Plutus Pioneer Program - Part 2: How to “deploy” a Smart Contract in Cardano](https://www.essentialcardano.io/article/plutus-pioneer-program-part-2-how-to-deploy-a-smart-contract-in-cardano).
